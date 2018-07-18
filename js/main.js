@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
         random : true, // Random playing
         titlebar : true, // Replace browser title on track title
         check_files : false, // Checks whether a track file exists
-        client_id : 'aeb4ef2f24d76bedddbb46e209d7fada', // Soundcloud Client ID
+        //client_id : '<your_scoundcloud_id>', // Soundcloud Client ID
         labels : {
             play : 'Play',
             cover : 'Cover',
@@ -41,12 +41,12 @@ jQuery(document).ready(function($) {
             debugFlash: false,
             useConsole: true
         },
-        onTrackEnd: function() {
+       /* onTrackEnd: function() { 
              Text = $('#scamp_player tr.playing td.sp-title a.sp-title-button').text()
              Text = Text.toLowerCase();
              var regExp = /\s+/g;
              Text = Text.replace(regExp,'-');
-        }
+        }*/
 
     });
 
